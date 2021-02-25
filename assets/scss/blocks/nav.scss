@@ -1,0 +1,131 @@
+/*********** NAVIGATION **********/
+
+.nav {
+    height: 80px;
+    margin: 50px 0 ;
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow__wrap {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    
+    background-color: $white;
+    border-radius: $radiusall;
+    border: $border;
+    cursor: pointer;
+    overflow: hidden;
+
+    .arrow__left__img,
+    .arrow__right__img {
+        padding: 10px;
+    }
+}
+
+
+.arrow__wrap:hover .arrow__left__img,
+.arrow__wrap:hover .arrow__right__img {
+    fill: $blue;
+}
+
+.arrow__wrap:hover {
+    transform: translateY(-1px);
+    box-shadow: $box-shadow;
+}
+
+.arrow__wrap:active {
+    transform: none;
+    box-shadow: none;
+}
+
+/*********** Navigation **********/
+
+.nav__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item + .nav__item {
+    margin-left: 50px;
+}
+
+.nav__box {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+
+    overflow: hidden;
+    transition: $transition;
+}
+
+.nav__img {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: $transitionfast;
+}
+
+.nav__img:hover {
+    // transform: rotate(20deg);
+    transform: translate(5px, -10px) rotate(10deg);
+}
+
+.nav__wrap {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black;
+
+    width: 210px;
+    height: 40px;
+
+    border-radius: $radiusall;
+    border: $border;
+    box-shadow: 2px 2px 5px rgba(194, 190, 190, 0.5);
+    transition: $transitionfast;
+}
+
+.nav__img-size {
+    top: 10px;
+}
+
+.nav__item:hover .nav__img {
+    transform: translate(5px, -10px) rotate(10deg);
+}
+
+.nav__item:hover .nav__wrap {
+    color: $blue;
+}
+
+.nav__item:active .nav__wrap {
+    box-shadow:none;
+}
+
+.nav__text {
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.nav:active .nav__text {
+    transform: translateY(1px);
+}

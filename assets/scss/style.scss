@@ -1,0 +1,64 @@
+@import "vars";
+
+/*GoogleFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: fff;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+a {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#active {
+    display: block;
+}
+
+#hidden {
+    display: none;
+}
+
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/nav";
+@import "blocks/stocks";
+@import "blocks/banner";
+
+
+
+
