@@ -1,0 +1,49 @@
+/*********** PAGER **********/
+
+
+
+.pager {
+    display: flex;
+}
+
+.pager__wrap {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    color: $graydark;
+    font-size: $sizem;
+    text-decoration: none;
+    
+    background-color: $white;
+    border-radius: $radiusall;
+    border: $border;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.pager__wrap:hover {
+    color: $blue;
+}
+
+.pager__active {
+    color: $black;
+}
+
+.pager__wrap + .pager__wrap {
+    margin-left: 20px;
+}
+
+.pager__wrap:hover {
+    transform: translateY(-1px);
+    box-shadow: $box-shadow;
+}
+
+.pager__wrap:active {
+    transform: none;
+    box-shadow: none;
+}

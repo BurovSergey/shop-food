@@ -1,0 +1,47 @@
+.arrow__wrap__right{
+    margin: 30px 20px 0 20px;
+}
+
+.arrow__wrap__left{
+    margin: 30px 20px 0 0;
+}
+
+.arrow__wrap__left,
+.arrow__wrap__right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    
+    background-color: $white;
+    border-radius: $radiusall;
+    border: $border;
+    cursor: pointer;
+    // overflow: hidden;
+}
+
+.arrow__left__img,
+.arrow__right__img {
+    height: 15px;
+}
+
+.arrow__wrap__left:hover .arrow__left__img,
+.arrow__wrap__left:hover .arrow__right__img,
+.arrow__wrap__right:hover .arrow__left__img,
+.arrow__wrap__right:hover .arrow__right__img {
+    fill: $blue;
+}
+
+.arrow__wrap__left:hover,
+.arrow__wrap__right:hover {
+    transform: translateY(-1px);
+    box-shadow: $box-shadow;
+}
+
+.arrow__wrap__left:active,
+.arrow__wrap__right:active {
+    transform: none;
+    box-shadow: none;
+}

@@ -1,0 +1,117 @@
+
+/*********** footer **********/
+
+.footer {
+    background-color: $blue;
+}
+
+.footer__wrap {
+    padding: 20px 0;
+    display: flex;
+}
+
+.footer__box + .footer__box {
+    margin-left: 20px;
+}
+
+.footer__logo,
+.footer__shop,
+.footer__service,
+.footer__support {
+    width: 25%;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo__title {
+    margin: 20px 0;
+    color: $white;
+}
+
+.footer__logo__text {
+    width: 100px;
+    display: block;
+    font-size: $sizexl;
+    color: $white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer__logo__text:hover {
+    color: orange;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__social__link + .footer__social__link {
+    margin-left: 20px;
+}
+
+.footer__social__img {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    fill: $white;
+}
+
+.footer__color-twitter:hover {
+    fill: $twitter;
+}
+
+.footer__color-vk:hover {
+    fill: $vk;
+}
+
+.footer__color-instagram:hover {
+    fill: $instagram;
+}
+
+.footer__title {
+    color: $orange;
+    font-size: $sizem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__list {
+    margin: 20px 0;
+}
+
+.footer__link {
+    display: block;
+    width: 100px;
+    
+    text-decoration: none;
+    color: $white;
+}
+
+.footer__link:hover {
+    color: $bluelight;
+}
+
+.footer__services__img {
+    margin-left: -20px;
+}
+
+.footer__phone {
+    display: block;
+    margin: 20px 0;
+    color: $white;
+}
+
+.footer__mode {
+    color: $white;
+    margin-bottom: 20px;
+}
+
+.footer__copyright {
+    padding: 20px 0;
+    color: $white;
+    text-align: center;
+}

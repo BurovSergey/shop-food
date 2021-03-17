@@ -1,0 +1,106 @@
+
+/*********** BTN **********/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 40px;
+    
+    font-weight: 700;
+    font-size: $sizem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-radius: $radiusall;
+}
+
+.btn-orange {
+    color: $black;
+    background-color: $orange;
+}
+
+.btn-blue {
+    color: $white;
+    background-color: $blue;
+}
+
+.btn-white {
+    color: $black;
+    background-color: $white;
+}
+
+.btn-fixed {
+    margin-top: auto;
+}
+
+.btn-white:hover {
+    color: $blue;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+/***************** reviews btn ***************/
+
+.reviews__btn {
+    float: right;
+}
+
+/***************** intro btn ***************/
+
+.big__btn {
+    width: 300px;
+    height: 80px;
+    
+    font-size: $sizem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border-radius: $radiusall;
+    border: none;
+
+    cursor: pointer;
+    transition: $transitionfast;
+}
+
+.big__btn:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.big__btn:active {
+    box-shadow: none;
+}
+
+/***************** footer btn ***************/
+
+.footer__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    height: 20px;
+
+    cursor: pointer;
+    font-size: $sizem;
+    color: $white;
+
+    border-radius: $radius;
+    border: 1px solid;
+}
+
+.footer__btn:hover {
+    background-color: $white;
+    color: $black;
+}
+
+.footer__btn-nocolor {
+    background: none;
+}

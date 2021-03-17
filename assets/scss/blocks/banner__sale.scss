@@ -1,0 +1,21 @@
+/*********** Banner sale **********/
+
+.banner__sale {
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $blue;
+}
+
+.banner__sale__title {
+    font-size: $sizexl;
+    color: $white;
+
+    span {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
